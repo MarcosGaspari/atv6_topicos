@@ -57,3 +57,9 @@ const funcionarios = [
             return anterior;
     });
     console.log(menor_id);
+
+    //- 3º commit: Use o map() para colocar todos os nomes no formato UpperCase.
+    console.log('------------------------------------');
+    
+    const upper = funcionarios.map(uppercas => (uppercas.nome.toUpperCase()));
+    console.log(upper)
