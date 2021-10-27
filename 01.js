@@ -46,4 +46,14 @@ const funcionarios = [
     
     const categ = funcionarios.filter(busca_categoria => (busca_categoria.categoria == 'gerente'))
     console.log(categ);
-    
+
+    //- 2º commit: Use o reduce() para retornar o objeto com o menor id
+    console.log('------------------------------------');
+
+    const menor_id = funcionarios.reduce((anterior, atual) => {
+        if (atual.id < anterior.id)
+            return atual;
+        else 
+            return anterior;
+    });
+    console.log(menor_id);
